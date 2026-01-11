@@ -3,7 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Super Bowl Countdown</title>
+    <title>Pepsi Super Bowl LX Countdown</title>
+    <meta
+      name="description"
+      content="Pepsi Super Bowl LX Countdown and real-time timer."
+    />
+    <meta property="og:title" content="Pepsi Super Bowl LX Countdown" />
+    <meta
+      property="og:description"
+      content="Pepsi Super Bowl LX Countdown with real-time timer."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Pepsi Super Bowl LX Countdown" />
+    <meta
+      name="twitter:description"
+      content="Pepsi Super Bowl LX Countdown with a cinematic video backdrop and real-time timer."
+    />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -148,6 +164,21 @@
 
         .time-label {
           letter-spacing: 0.18em;
+        }
+      }
+
+      @media (min-width: 900px) {
+        .logos img {
+          width: clamp(276px, 40.8vw, 480px);
+          height: clamp(126px, 21.6vw, 228px);
+        }
+
+        .time-value {
+          font-size: clamp(3.84rem, 9.6vw, 9rem);
+        }
+
+        .time-label {
+          font-size: clamp(0.84rem, 2.4vw, 1.2rem);
         }
       }
     </style>
